@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="register.css">
+
+  <title>Register</title>
+</head>
+<body>
+  <div class="register-page">
+  <div class="register-form">
+    <div id="heading">
+      <h2>REGISTER YOUR DETAILS</h2>
+    </div>
+    <div id="form-content">
+      <form name="formContent">
+        <div class="cont">
+          <label for="Name">Enter your Full Name</label><br>
+        <input type="text" id="Name" name="Name"><br><br>
+        <label for="Photo">Upload your Photo</label><br>
+        <div class="ph-cont">
+          <input type="file" id="Photo" name="filename"><br><br>
+        </div>
+        <div class="button">
+          <button type="button" id="submit">REGISTER</button>
+        </div>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  <div id="home">
+    <img src="Assets/home.svg" alt="Back to Home" onclick="document.location='index.html'">
+  </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+<script type="text/javascript" src="./config.js"></script>
+<script type="module" src="./register.js" ></script>
+</body>
+</html>

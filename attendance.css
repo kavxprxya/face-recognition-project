@@ -1,0 +1,19 @@
+body{
+  background: #272435;
+}
+
+h2{
+  color: #9587FF;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+}
+
+#home{
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+

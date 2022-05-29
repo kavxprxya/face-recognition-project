@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Attendance</title>
+  <link rel="stylesheet" type="text/css" href="check.css">
+</head>
+<body>
+  <h2>CHECK ATTENDANCE</h2>
+  <div id="home">
+    <img src="Assets/home.svg" alt="Back to Home" onclick="document.location='index.html'">
+  </div>
+  <div class="Name">
+
+  </div>
+  <script>
+    function showimage() {
+
+
+
+        var storageRef = firebase.storage().ref();
+        var spaceRef = storageRef.child('sweet_gift/vytcdc.png');
+        storageRef.child('sweet_gift/vytcdc.png').getDownloadURL().then(function(url) {
+            var test = url;
+            alert(url);
+            document.querySelector('img').src = test;
+
+        }).catch(function(error) {
+
+        });
+
+
+    }
+   </script>
+   <img src="test" height="125px" width="200px"/> 
+</body>
+</html>
